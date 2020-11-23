@@ -1,5 +1,5 @@
 # om_crypt
-a simple encryption-decryption function inspired by, or might be similar to otp-encryption
+a simple encryption-decryption function inspired by, or might be similar, or might be exactly the otp-encryption
 
 ## encryption
 
