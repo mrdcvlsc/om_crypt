@@ -9,7 +9,7 @@ string decrypt(string message, string key);
 int charToInt(char letter);
 char intToChar(int number);
 
-int checking_95(int);
+int checking(int);
 
 
 #endif // READ_WRITE_CRYPT_H_INCLUDED

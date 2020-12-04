@@ -23,7 +23,7 @@ char intToChar(int number){
 	return k_char[number-1];
 }
 
-int checking_95(int add_or_sub_values)
+int checking(int add_or_sub_values)
 {
      int return_;
      if(add_or_sub_values < 1)
@@ -79,7 +79,7 @@ string encrypt(string filedata_, string key)
      // size of the File_uncrypted string.
      for(unsigned int i = 0; i < file_data_size; ++i) {
           int temporary_store2;
-          temporary_store2 = checking_95(int_added_val_KeyAndFile[i]);
+          temporary_store2 = checking(int_added_val_KeyAndFile[i]);
           cryptEn_char_converted_added_int_val_KeyAndFile[i] = intToChar(temporary_store2);
      }
 
@@ -156,7 +156,7 @@ string decrypt(string filedata_, string key)
      for(unsigned int i = 0; i < file_data_size; ++i)
      {
           int temporary_store;
-          temporary_store = checking_95(int_Subtracted_val_KeyAndFile[i]);
+          temporary_store = checking(int_Subtracted_val_KeyAndFile[i]);
           cryptDe_char_converted_Subtracted_int_val_KeyAndFile[i] = intToChar(temporary_store);
      }
 
