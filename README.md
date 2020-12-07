@@ -20,7 +20,7 @@ a simple encryption-decryption function inspired by, or might be similar, or mig
 
 int main(){
 
-	string message = "this is a message, to be encrypted and to be decrypted back right away, !<>?!@#$%^&*()_+1234567890-=";
+	string message = "this is a message, to be encrypted and decrypted back right away, !<>?!@#$%^&*()_+1234567890-=";
 	cout<<"\ndefault : \n"<<message<<endl<<endl;
 
 	string encrypted_message = encrypt(message,"a_random_key_for_decryption");
