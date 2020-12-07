@@ -11,3 +11,24 @@ a simple encryption-decryption function inspired by, or might be similar, or mig
   - this function also takes two string arguments, the first is the encrypted text to be decrypted back to its original form, the the correct key string
   - returns decrypted string...
   
+## sample code
+```c++
+// main.cpp
+
+#include <iostream>
+#include "om_crypt.h"
+
+int main(){
+
+	string message = "this is a message test, to be encrypted and to be decrypted back right away, !<>?!@#$%^&*()_+1234567890-=";
+	cout<<"\ndefault : \n"<<message<<endl<<endl;
+
+	string encrypted_message = encrypt(message,"a_random_key_for_decryption");
+	cout<<"encrypted value : \n"<<encrypted_message<<endl<<endl;
+
+	string decrypted_back = decrypt(encrypted_message,"a_random_key_for_decryption");
+	cout<<"decrypted back message\n"<<decrypted_back<<endl<<endl;
+
+	return 0;
+}
+```
