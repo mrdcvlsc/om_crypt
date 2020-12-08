@@ -2,8 +2,8 @@
 put this in your driver js file (main.js/index.js):
 	const om = require('./om_crypt.js');
 
-om.encrypt("your_msg","secret_key");
-om.decrypt("your_encrypted_msg","secret_key");
+	om.encrypt("your_msg","secret_key");
+	om.decrypt("your_encrypted_msg","secret_key");
 */
 
 module.exports = {
