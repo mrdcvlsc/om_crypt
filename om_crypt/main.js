@@ -1,16 +1,8 @@
 const om = require('./om_crypt.js');
 
-var test = 'a';
-var newt = om.char_to_int(test);
-var news = om.int_to_char(newt);
-
-console.log(test);
-console.log(newt);
-console.log(news);
-
-let msg = "this is my message, I am mordecai the ruler";
-let emsg = om.encrypt(msg,"this is my key this is my key this is my key this is my key ");
-let dmsg = om.decrypt(emsg,"this is my key this is my key this is my key this is my key ");
+let msg = "this is my message";
+let emsg = om.encrypt(msg,"hiasd78d78g2ig3gydgtf76222e27ey2u82y786sed");
+let dmsg = om.decrypt(emsg,"hiasd78d78g2ig3gydgtf76222e27ey2u82y786sed");
 
 console.log(msg);
 console.log(emsg);
