@@ -16,8 +16,8 @@ module.exports = {
 			<body>
 
 				<div id="main">
-					<form action="/encrypt" id="encrypt" method="POST"></form>
-					<form action="/decrypt" id="decrypt" method="POST"></form>
+					<form action="/encrypt" id="encrypt-form" method="POST"></form>
+					<form action="/decrypt" id="decrypt-form" method="POST"></form>
 
 					<div id="heading">
 						<h1>om_crypt</h1>
@@ -27,20 +27,20 @@ module.exports = {
 
 						<div id="encrypt" class="crypt-child">
 							<h3>Encrypt</h3>
-							<input    name="KEY_STR_E"  form="encrypt" type="text" required placeholder="input encryption key" style="text-align: center">
-							<textarea name="TO_ENCRYPT" form="encrypt" class="crypt-fileds" placeholder="message to encrypt" required>${msg}</textarea><br>
+							<input    name="KEY_STR_E"  form="encrypt-form" type="text" required placeholder="input encryption key" style="text-align: center">
+							<textarea name="TO_ENCRYPT" form="encrypt-form" class="crypt-fileds" placeholder="message to encrypt" required>${msg}</textarea><br>
 							<p>NOTE</p>
 							<p>DO NOT put a "LINE SPACE" or "ENTER SPACE"</p>
-							<input type="submit" form="encrypt" value="Lock" class="cbuttons">
+							<input type="submit" form="encrypt-form" value="Lock" class="cbuttons">
 						</div><!--encrypt-->
 
 						<div id="decrypt" class="crypt-child">
 							<h3>Decrypt</h3>
-							<input    name="KEY_STR_D"  form="decrypt" type="text" required placeholder="input decryption key" style="text-align: center">
-							<textarea name="TO_DECRYPT" form="decrypt" class="crypt-fileds" placeholder="message to decrypt" required></textarea><br>
+							<input    name="KEY_STR_D"  form="decrypt-form" type="text" required placeholder="input decryption key" style="text-align: center">
+							<textarea name="TO_DECRYPT" form="decrypt-form" class="crypt-fileds" placeholder="message to decrypt" required></textarea><br>
 							<p>NOTE</p>
 							<p>DO NOT put a "LINE SPACE" or "ENTER SPACE"</p>
-							<input type="submit" form="decrypt" value="Unlock" class="cbuttons">
+							<input type="submit" form="decrypt-form" value="Unlock" class="cbuttons">
 						</div><!--decrypt-->
 					</div><!--crypt-->
 				</div><!--main-->
@@ -70,8 +70,8 @@ module.exports = {
 			<body>
 
 				<div id="main">
-					<form action="/encrypt" id="encrypt" method="POST"></form>
-					<form action="/decrypt" id="decrypt" method="POST"></form>
+					<form action="/encrypt" id="encrypt-form" method="POST"></form>
+					<form action="/decrypt" id="decrypt-form" method="POST"></form>
 
 					<div id="heading">
 						<h1>om_crypt</h1>
@@ -81,20 +81,20 @@ module.exports = {
 
 						<div id="encrypt" class="crypt-child">
 							<h3>Encrypt</h3>
-							<input    name="KEY_STR_E"  form="encrypt" type="text" required placeholder="input encryption key" style="text-align: center">
-							<textarea name="TO_ENCRYPT" form="encrypt" class="crypt-fileds" placeholder="message to encrypt" required></textarea><br>
+							<input    name="KEY_STR_E"  form="encrypt-form" type="text" required placeholder="input encryption key" style="text-align: center">
+							<textarea name="TO_ENCRYPT" form="encrypt-form" class="crypt-fileds" placeholder="message to encrypt" required></textarea><br>
 							<p>NOTE</p>
 							<p>DO NOT put a "LINE SPACE" or "ENTER SPACE"</p>
-							<input type="submit" form="encrypt" value="Lock" class="cbuttons">
+							<input type="submit" form="encrypt-form" value="Lock" class="cbuttons">
 						</div><!--encrypt-->
 
 						<div id="decrypt" class="crypt-child">
 							<h3>Decrypt</h3>
-							<input    name="KEY_STR_D"  form="decrypt" type="text" required placeholder="input decryption key" style="text-align: center">
-							<textarea name="TO_DECRYPT" form="decrypt" class="crypt-fileds" placeholder="message to decrypt" required>${msg}</textarea><br>
+							<input    name="KEY_STR_D"  form="decrypt-form" type="text" required placeholder="input decryption key" style="text-align: center">
+							<textarea name="TO_DECRYPT" form="decrypt-form" class="crypt-fileds" placeholder="message to decrypt" required>${msg}</textarea><br>
 							<p>NOTE</p>
 							<p>DO NOT put a "LINE SPACE" or "ENTER SPACE"</p>
-							<input type="submit" form="decrypt" value="Unlock" class="cbuttons">
+							<input type="submit" form="decrypt-form" value="Unlock" class="cbuttons">
 						</div><!--decrypt-->
 					</div><!--crypt-->
 				</div><!--main-->

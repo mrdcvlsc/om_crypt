@@ -19,52 +19,90 @@
 }
 
 .crypt-fileds{
-	min-width: 300px;
+	min-width: 400px;
 	max-width: 1200px;
-	height: 300px;
+	height: 350px;
 	padding: 4px;
 }
 
 /* responsive encrypt and decrypt block */
-.crypt { 
-  border : 2px solid #000; 
-  overflow:hidden;
-}
-
 #encrypt {
   float:left; 
   margin:auto;
   width: 50%;
-  border:1px solid #ccc;
+  border:0px solid #ccc;
 }
 
 #decrypt {
-  overflow:hidden;
   margin:auto;
   width: auto;
-  border:1px solid #ccc;
-}
-
-@media (max-width: 850px) {
-   #encrypt { 
-    float: none;
-    margin-right:0;
-    width:auto;
-  }
-
-  #decrypt {
-  	margin-top: 35px;
-  }
+  border:0px solid #ccc;
 }
 
 .crypt-child > *{
 	margin: 5px;
 }
 
-h3 { font-style: italic; }
+
+@media (max-width: 800px) {
+
+   #encrypt { 
+    float: none;
+    margin-right:0;
+    width:auto;
+    padding: 10px;
+  }
+
+  #decrypt {
+  	border-top: 1px solid black;
+  	margin-top: 20px;
+  	padding: 10px;
+  }
+
+  .crypt-fileds{
+  	min-width: 320px;
+  	max-height: 150px;
+  }
+
+ .crypt{
+ 	padding: 30px;
+ }
+}
+
+h3 {
+	font-style: italic;
+}
+
+input{
+	min-height: 40px;
+}
 
 .cbuttons{
+	font-weight: bold;
+	color: black;
+
 	padding: 4px;
+	outline: none;
+
+	min-height: 40px;
+	min-width: 100px;
+
+	border: 3px solid black;
+	border-radius: 7px 7px 7px 7px / 7px 7px 7px 7px;
+	background-color: white;
+}
+
+.cbuttons:hover{
+	transition: 0.3s ease;
+	background-color: black;
+	color: white;
+}
+
+.cbuttons:focus,.cbuttons:active{
+	transition: 0.2s ease;
+	background-color: black;
+	color: green;
+	box-shadow: green 0px 0px 2px 3px;
 }
 
 textarea { white-space: pre-wrap; }
