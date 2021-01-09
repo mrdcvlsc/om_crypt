@@ -2,12 +2,7 @@ run in terminal :
 compile : **```javac Main.java```**
 run : **```java Main```**
 
-# om_crypt
-a simple encryption-decryption function inspired by, or might be similar to otp-encryption, see the web app demo 
-
-### DEMO
-
-[WEB APPLICATION](https://omcrypt.herokuapp.com/)
+# Java - omcrypt
 
 ## encryption
 
