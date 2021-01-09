@@ -17,7 +17,7 @@ module.exports = {
 			if(character == this.characters[i])
 				return i+1;
 		}
-    	return '\0';
+    		return '\0';
 	},
 
 	int_to_char: function(integer){
@@ -33,7 +33,7 @@ module.exports = {
 		if(add_or_sub_values > this.characters.length)
 			return return_ = add_or_sub_values - this.characters.length;
 
-    	return add_or_sub_values;
+    		return add_or_sub_values;
 	},
 
 	encrypt: function(message,key){
@@ -78,7 +78,6 @@ module.exports = {
 
 		     encrypted = File_crypted;
 
-		     //
 		     if(encrypted.lenght > file_data_size)
 		          encrypted = encrypted.substring(0,file_data_size);
 
@@ -95,40 +94,39 @@ module.exports = {
 
 		let key_int_value = Array.apply(null, Array(ky_size)).map(function () {});
 		let char_to_int_val_storage_de = Array.apply(null, Array(file_data_size)).map(function () {});
-        let	int_Subtracted_val_KeyAndFile = Array.apply(null, Array(file_data_size)).map(function () {});
+        	let int_Subtracted_val_KeyAndFile = Array.apply(null, Array(file_data_size)).map(function () {});
 
 
 		let cryptDe_char_converted_Subtracted_int_val_KeyAndFile = Array.apply(null, Array(file_data_size)).map(function () {});
 
 		for(let i = 0; i < file_data_size; ++i)
-     	{
-        	char_to_int_val_storage_de[i] = this.char_to_int(File_crypted[i]);
-     	}
+     		{
+        		char_to_int_val_storage_de[i] = this.char_to_int(File_crypted[i]);
+     		}
 
 		for(let i = 0; i < ky_size; ++i)
 			key_int_value[i] = this.char_to_int(key[i]);
 
-     	for(let i = 0, j = 1; i < file_data_size; ++i)
-     	{
+     		for(let i = 0, j = 1; i < file_data_size; ++i)
+     		{
 			if(j < ky_size) {
 				int_Subtracted_val_KeyAndFile[i] = (char_to_int_val_storage_de[i] - key_int_value[j-1]);
-            	j = j + 1;
-        	}
-          	else if(j == ky_size) {
+            			j = j + 1;
+        		}
+          		else if(j == ky_size) {
 				int_Subtracted_val_KeyAndFile[i] = (char_to_int_val_storage_de[i] - key_int_value[j-1]);
-            	j =  1;
-        	}
-     	}
+            			j =  1;
+        		}
+     		}
 
-    	let temporary_store;
+    		let temporary_store;
 		for(let i = 0; i < file_data_size; ++i)
-     	{
-          	
-          	temporary_store = this.checking(int_Subtracted_val_KeyAndFile[i]);
+     		{
+          		temporary_store = this.checking(int_Subtracted_val_KeyAndFile[i]);
 			cryptDe_char_converted_Subtracted_int_val_KeyAndFile[i] = this.int_to_char(temporary_store);
 		}
 
-     	//then store the decrypted characters into a proper let
+     		//then store the decrypted characters into a proper let
 		File_crypted = cryptDe_char_converted_Subtracted_int_val_KeyAndFile;
 
 		decrypted = File_crypted;
