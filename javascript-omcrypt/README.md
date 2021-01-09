@@ -1,6 +1,6 @@
-##requires node.js##
+## requires node.js
 
-*node main.js*
+run in terminal **```node main.js```**
 
 # om_crypt
 a simple encryption-decryption function inspired by, or might be similar to otp-encryption (C++ and Javascript-nodejs), see the web app demo 
