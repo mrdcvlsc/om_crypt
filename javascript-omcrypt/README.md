@@ -1,4 +1,4 @@
-##-requires node.js##
+##requires node.js##
 
 *node main.js*
 
