@@ -5,12 +5,7 @@ compile : **```g++ -o main.exe main.cpp```**
 run in linux : **```./main.exe```**
 run in windows : **```main```**
 
-# om_crypt
-a simple encryption-decryption function inspired by, or might be similar to otp-encryption (C++ and Javascript-nodejs), see the web app demo 
-
-### DEMO
-
-[WEB APPLICATION](https://omcrypt.herokuapp.com/)
+# C++ - omcrypt
 
 ## encryption
 
